@@ -1,0 +1,64 @@
+.CardWrapper {
+	height: 152px;
+	width: 123px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(73, 112, 170, 0.658);
+	/* background-color: rgba(52, 52, 52, 0.8); */
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 8%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+.image {
+	margin-top: 7%;
+	margin-bottom: 12%;
+	display: flex;
+	background-size: 90% 65%;
+	justify-content: center;
+	height: 65%;
+
+	/* background-color: aliceblue; */
+	background-repeat: no-repeat;
+}
+
+.onClickCardWrapper {
+	height: 152px;
+	width: 123px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(168, 236, 188, 0.548);
+	border: 3.15px solid;
+	border-color: rgba(151, 228, 174, 0.582);
+	/* background-color: rgba(52, 52, 52, 0.8); */
+	align-items: center;
+	justify-content: center;
+	border-radius: 8%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+	.CardWrapper {
+		margin-right: 22px;
+		margin-left: 22px;
+	}
+	.image {
+		margin-top: 7%;
+		margin-bottom: 12%;
+		display: flex;
+		justify-content: center;
+		height: 57%;
+
+		background-repeat: no-repeat;
+	}
+}
+
+.CardWrapper:hover {
+	background-color: rgba(168, 236, 188, 0.548);
+	border: 3.15px solid;
+	border-color: rgba(151, 228, 174, 0.582);
+}

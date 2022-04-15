@@ -1,0 +1,174 @@
+.setMoodWrapper {
+	background-color: #9db6bd;
+	display: flex;
+	position: relative;
+	height: calc(100vh - 3.5rem);
+	width: 100%;
+	justify-content: flex-end;
+}
+.setMoodRight {
+	width: 25.7rem;
+	height: calc(100vh - 3.5rem);
+	background-color: #9db6bd;
+	display: flex;
+}
+.setMood-image {
+	display: flex;
+	background-size: cover;
+	justify-content: flex-start;
+	background-blend-mode: exclusion;
+	background-position: "center";
+	height: calc(100vh - 3.5rem);
+	width: 100vw;
+	background-repeat: no-repeat;
+}
+.setMoodLeft {
+	width: 75.5rem;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.leftWrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardRowWrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(52, 52, 52, 0.8);
+	height: 90%;
+	width: 33rem;
+	/* overflow-x: auto; */
+	/* margin-top: 5%; */
+	border-radius: 8%;
+	align-items: center;
+	justify-content: center;
+}
+
+.cardRow {
+	display: flex;
+	margin-top: 3%;
+	justify-content: center;
+	/* background-color: black; */
+	width: 98%;
+}
+
+.Instruction {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* position: relative; */
+	text-align: center;
+	border-radius: 8%;
+	height: 10%;
+	width: 40%;
+	margin-top: 1%;
+	font-size: large;
+	align-items: center;
+	background-color: rgba(52, 52, 52, 0.8);
+}
+.FetchButton {
+	background-color: rgba(228, 97, 92, 0.651);
+	font-size: 90%;
+	height: 8%;
+	width: 10rem;
+	margin-bottom: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 14%;
+	color: rgba(221, 206, 209, 0.815);
+	font-weight: 550;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.FetchButton:hover {
+	background-color: rgba(168, 236, 188, 0.548);
+	border: 3.15px solid;
+	border-color: rgba(151, 228, 174, 0.582);
+	color: rgba(41, 33, 34, 0.815);
+}
+.FetchButtonSelected {
+	background-color: rgba(168, 236, 188, 0.548);
+	border: 3.15px solid;
+	border-color: rgba(151, 228, 174, 0.582);
+	color: rgba(41, 33, 34, 0.815);
+	font-size: 90%;
+	height: 8%;
+	width: 10rem;
+	margin-bottom: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 14%;
+
+	font-weight: 550;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 1263px) {
+	.setMoodLeft {
+		width: calc(100vw - 400px);
+		/* background-color: rgb(179, 147, 178); */
+		overflow-x: auto;
+		/* padding: 0.5rem; */
+		padding-left: 2%;
+		/* padding-right: 2%; */
+	}
+	.setMoodRight {
+		width: 400px;
+		overflow-x: visible;
+		margin-left: 0;
+	}
+	.cardRowWrapper {
+		display: flex;
+		/* background-color: rgb(42, 54, 165); */
+		width: calc(calc(100vw - 400px)- 10rem);
+		justify-content: center;
+		/* overflow-x: auto; */
+		padding-right: 0;
+	}
+	.cardRow {
+		width: 450px;
+		margin-left: 0;
+		/* background-color: aliceblue; */
+		justify-content: center;
+		padding-right: 0;
+	}
+}
+@media screen and (max-width: 980px) {
+	.setMoodLeft {
+		width: calc(100vw - 385px);
+		/* background-color: yellowgreen; */
+		overflow-x: auto;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.setMoodRight {
+		width: 385px;
+		overflow-x: visible;
+		margin-left: 0;
+	}
+	.cardRowWrapper {
+		display: flex;
+		/* background-color: brown; */
+		width: 550px;
+		justify-content: center;
+		overflow-x: auto;
+		padding-right: 0;
+	}
+	.cardRow {
+		width: 450px;
+		margin-left: 0;
+		/* background-color: aliceblue; */
+		justify-content: center;
+		padding-right: 0;
+	}
+}

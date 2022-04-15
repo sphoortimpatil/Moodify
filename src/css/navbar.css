@@ -1,0 +1,115 @@
+.navbar {
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	background-color: rgb(13, 17, 31);
+	display: flex;
+	padding: 1rem;
+	overflow: hidden;
+}
+
+.links {
+	display: flex;
+	width: 100%;
+	padding: 0 1rem;
+	/* overflow: hidden; */
+	justify-content: space-around;
+	/* background-color: bisque; */
+}
+
+.brandName {
+	font-size: 1.5rem;
+	color: aquamarine;
+	display: flex;
+	align-self: center;
+	padding-right: 2rem;
+	margin-left: 0.6rem;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: rgba(116, 171, 180, 0.863);
+	padding: 0.35rem 0.8rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.left_links {
+	display: flex;
+	flex-grow: 3;
+}
+
+.right_links {
+	display: flex;
+	margin-right: 3rem;
+	flex-grow: 0.5;
+	justify-content: flex-end;
+}
+
+.navbar a:hover {
+	background-color: rgba(185, 92, 92, 0.726);
+	color: rgba(255, 232, 232, 0.836);
+	border-radius: 0.9rem;
+}
+
+.navbar a.active {
+	background-color: rgba(185, 92, 92, 0.726);
+	color: rgba(255, 232, 232, 0.836);
+	border-radius: 0.9rem;
+}
+
+.toggleButton {
+	position: absolute;
+	top: 0rem;
+	right: 3.5rem;
+	display: flex;
+	visibility: hidden;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggleButton .bar {
+	height: 3px;
+	width: 100%;
+	margin-right: 5%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 620px) {
+	.navbar {
+		height: fit-content;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.links {
+		margin-top: 1.5rem;
+		display: none;
+		flex-direction: column;
+		visibility: hidden;
+	}
+
+	.navbar a {
+		padding-top: 1.15rem;
+	}
+	.right_links {
+		flex-direction: column;
+		display: none;
+	}
+	.left_links {
+		flex-direction: column;
+		display: none;
+	}
+	.toggleButton {
+		visibility: visible;
+	}
+}
+
+.links.active {
+	display: flex;
+}

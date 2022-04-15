@@ -1,0 +1,51 @@
+.scanMoodContainer {
+	background-color: #9db6bd;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: calc(100vh - 3.5rem);
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+}
+.ScanInfo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* position: relative; */
+	text-align: center;
+	border-radius: 8%;
+	height: 10%;
+	width: 40%;
+	margin-top: 1%;
+	font-size: large;
+	align-items: center;
+	background-color: rgba(52, 52, 52, 0.8);
+	margin-bottom: 1rem;
+}
+.ScanImage {
+	height: 20.5rem;
+	width: 39rem;
+	background-color: rgba(52, 52, 52, 0.8);
+	border-radius: 9%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+canvas {
+	position: absolute;
+	/* background-color: red; */
+}
+#input[type="file"] {
+	display: none;
+	/* text-decoration: none; */
+}
+
+.label {
+	width: 100%;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
